@@ -3,9 +3,9 @@ I wanted to help my friends to keep track who is winning in their ongoing beerpo
 
 This program runs on the PERN stack, PostgreSQL, Express, React and Node.js. Additionally, MaterialUI is used on some of the components.
 
-###Implemented so far:
+### Implemented so far:
 Database using PostgreSQL.
 Server using Node.js, Express.
 
-###Now working on:
+### Now working on:
 Clientside using React.
