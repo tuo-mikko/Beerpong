@@ -2,17 +2,17 @@ import React, { Fragment, useEffect, useState } from 'react';
 import '../App.css';
 
 const Scoreline = (data) => {
-  if ((data.length = !0)) {
-    return (
+  if (data.length != 0) {
+    const line = (
       <Fragment>
-        <h1 className="font-weight-bold text-center">
-          {data[0].wins} - {data[1].wins}
-        </h1>
-        <h1 className="font-weight-bold text-center">
-          {data[0].player_name} - {data[1].player_name}
-        </h1>
+        <div className="font-weight-bold text-center mt-3 scoreline">
+          {data[0].player_name} {data[0].wins}-{data[1].wins}
+          {'  '}
+          {data[1].player_name}
+        </div>
       </Fragment>
     );
+    return line;
   }
   return;
 };

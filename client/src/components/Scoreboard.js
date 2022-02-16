@@ -19,10 +19,13 @@ const Scoreboard = () => {
 
   return (
     <Fragment>
-      <img className="align-middle" src={logo}></img>
-      <h2 className="text-center mt-3">Current Leader</h2>
-      <h1 className="font-weight-bold text-center">{winner}</h1>
-      <></>
+      <div className="card">
+        {' '}
+        <img className="align-middle" src={logo}></img>
+        <>{Scoreline(scores)}</>
+        <h2 className="text-center">Current Leader</h2>
+        <h1 className="font-weight-bold text-center">{winner}</h1>
+      </div>
     </Fragment>
   );
 };

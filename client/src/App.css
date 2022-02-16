@@ -47,6 +47,101 @@ img {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 100%;
+  min-width: 250px;
+  max-width: 40%;
   height: auto;
+}
+
+div.card {
+  border-style: solid;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 5px;
+  padding: 10px;
+  margin-top: 5px;
+  background-color: #d0e8ff;
+}
+
+div.scoreline {
+  font-size: 40px;
+  font-weight: 500;
+}
+
+.modall {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  transition: all 0.3s ease-in-out;
+  pointer-events: none;
+}
+
+.modall.show {
+  opacity: 1;
+  pointer-events: visible;
+}
+.modall-content {
+  width: 500px;
+  background-color: #fff;
+  border: 1px solid;
+  border-radius: 5px;
+  margin: 11px;
+  transform: translateY(-200px);
+  transition: all 0.3s ease-in-out;
+}
+
+.modall.show .modall-content {
+  transform: translateY(0);
+}
+
+.modall-header,
+.modall-footer {
+  padding: 10px;
+}
+
+.modall-title {
+  margin: 0;
+}
+
+.modall-subtitle .modall-body {
+  padding: 10px;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+}
+
+.active {
+  background: #d0ffda;
+  border: solid 2px rgb(163, 163, 163);
+  font-weight: 700;
+}
+
+button {
+  background-color: #d0e8ff;
+  border: none;
+  color: black;
+  margin: 5px;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 10px;
+}
+
+.nav-button {
+  width: 200px;
+  padding: 10px;
+  font-size: 20px;
+}
+
+.addition-button {
+  padding: 13px 22px;
+  margin-left: 15px;
+  margin-right: 15px;
+  border-radius: 50px;
 }

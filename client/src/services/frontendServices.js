@@ -18,3 +18,13 @@ export const calcWinning = (players) => {
     console.error(error.message);
   }
 };
+
+export const addGame = async (playerId, cupsLeft) => {
+  try {
+    const scores = await fetch('http://localhost:5000/results');
+    const jsonData = await scores.json();
+    return jsonData;
+  } catch (error) {
+    console.error(error.message);
+  }
+};
